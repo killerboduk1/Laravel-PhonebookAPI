@@ -11,18 +11,37 @@
  composer install
  php artisan migrate
  php artisan db:seed
- php artisan serve
+```
+- run these to generate the key
+
+```bash
+php artisan key:generate
+php artisan optimize
+php artisan config:cache
 ```
 
+- run the project
+
+```bash
+php artisan serve
+```
 
 ## Sample Graphql Query and Mutation
 
-- Use this to get the authorization Bearer 
+- First we need to Use this to get the authorization Bearer 
+  i added the " graphql-playground " package so that we can test the graphql API
+  replace the email with your Users data
 ```bash
 mutation {
     login(email:"ookuneva@example.org",password:"password", device:"web")
 }
 ```
+
+- Copy the generated token and add the token to the HTTP HEADERS it should look like this
+
+![Alt text](https://i.ibb.co/dfbJgGx/Screenshot-2023-12-15-at-2-48-08-PM.png "Optional Title")
+
+
 
 -  View Contact with id filter
 ```bash
