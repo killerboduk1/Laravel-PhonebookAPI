@@ -4,6 +4,7 @@
 
 - clone the repo https://github.com/killerboduk1/Laravel-PhonebookAPI
 - cd to Laravel-PhonebookAPI
+- rename or copy .env.example to .env then update your Database credentials
 - runs these commands
 
 ```bash
