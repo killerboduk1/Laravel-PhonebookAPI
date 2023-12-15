@@ -28,8 +28,8 @@ php artisan serve
 
 ## Sample Graphql Query and Mutation
 
-- First we need to Use this to get the authorization Bearer 
-  i added the " graphql-playground " package so that we can test the graphql API
+- First we need to use this to get the authorization token to be used to access other endpoint. 
+  I added the " graphql-playground " package so that we can test the graphql API
   replace the email with your Users data
 ```bash
 mutation {
@@ -37,7 +37,7 @@ mutation {
 }
 ```
 
-- Copy the generated token and add the token to the HTTP HEADERS it should look like this
+- After running the command above Copy the generated token and add the token to the HTTP HEADERS it should look like this
 
 ![Alt text](https://i.ibb.co/tQJyg95/Screenshot-at-Dec-15-15-02-43.png "Optional Title")
 
