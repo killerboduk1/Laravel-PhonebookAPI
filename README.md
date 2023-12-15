@@ -39,7 +39,7 @@ mutation {
 
 - Copy the generated token and add the token to the HTTP HEADERS it should look like this
 
-![Alt text](https://i.ibb.co/dfbJgGx/Screenshot-2023-12-15-at-2-48-08-PM.png "Optional Title")
+![Alt text](https://i.ibb.co/tQJyg95/Screenshot-at-Dec-15-15-02-43.png "Optional Title")
 
 
 
