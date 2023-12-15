@@ -1,0 +1,5 @@
+
+#import mutation/contact.graphql
+#import query/contact.graphql
+
+#import mutation/auth.graphql

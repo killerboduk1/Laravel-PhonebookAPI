@@ -1,0 +1,15 @@
+extend type Mutation {
+
+    createContact(
+        name: String @rules(apply: ["unique:contacts,name"]),
+        contact_no: String,
+    ): Contact! @create @guard
+
+    updateContact(id: ID!,
+        name: String!,
+        contact_no: String
+    ): Contact @update @guard
+
+    deleteContact(id: ID! @whereKey): Contact @delete @guard
+
+}

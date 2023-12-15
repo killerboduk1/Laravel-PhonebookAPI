@@ -1,0 +1,11 @@
+extend type Query {
+    listContacts: [Contact!] @paginate @guard
+    viewContact(id: ID @eq):Contact @find @guard
+}
+
+type Contact {
+    id: ID!
+    name: String!
+    contact_no: String!
+}
+
